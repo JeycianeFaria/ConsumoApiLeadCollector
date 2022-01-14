@@ -9,7 +9,7 @@ export default class CadastroLead extends Component {
             <div>
                 <Header title="Cadastro Leads"></Header>
                 <hr/>
-                <Form>
+                <Form className="forms">
                     <FormGroup>
                         <Label for="nome">Nome</Label>
                         <Input type="text" id="nome" placeholder="Informe o seu nome: "/>
