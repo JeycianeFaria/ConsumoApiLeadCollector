@@ -7,7 +7,8 @@ export default class Login extends Component {
     render(){
         return(
             <div>
-                <Header title="Página de login"></Header>
+                <Header title="Login"></Header>
+                <hr/>
                 <Form>
                     <FormGroup>
                         <Label for="email">Email</Label>
