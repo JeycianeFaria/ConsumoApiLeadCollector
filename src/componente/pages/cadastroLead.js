@@ -20,7 +20,7 @@ export default class CadastroLead extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label for="descricao">Descrição</Label>
-                        <Input type="text" id="descricao" placeholder="Informe a descrição: "/>
+                        <textarea placeholder="Faça a descrição aqui:  " class="form-control"></textarea>
                     </FormGroup>
                     <Button color="primary" block>Entrar</Button>
                 </Form>
