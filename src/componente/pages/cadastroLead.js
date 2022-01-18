@@ -27,9 +27,6 @@ export default class CadastroLead extends Component {
 
     fetch(url, requestInfo)
       .then((response) => {
-        if(!response.created){
-          throw new Error("Tem algo de errado")
-        }
         console.log("Cadastro efetuado com sucesso!")
         return response
       })
