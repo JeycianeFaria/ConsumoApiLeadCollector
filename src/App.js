@@ -1,16 +1,16 @@
 import react, { Component } from "react";
-//import Login from "./componente/pages/login";
 import "./App.css";
 import { } from "reactstrap";
 import Card from "./componente/Card";
-import CadastroLead from "./componente/pages/cadastroLead";
+import Routes from "./routes";
+
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
         <Card>
-          <CadastroLead></CadastroLead>
+          <Routes></Routes>
         </Card>
       </div>
     );
