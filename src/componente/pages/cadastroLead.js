@@ -27,6 +27,10 @@ export default class CadastroLead extends Component {
 
     fetch(url, requestInfo)
       .then((response) => {
+        if(!response.created){
+          throw new Error("Tem algo de errado")
+        }
+        console.log("Cadastro efetuado com sucesso!")
         return response
       })
       .catch(e => {
@@ -67,7 +71,7 @@ export default class CadastroLead extends Component {
               className="form-control"
             ></textarea>
           </FormGroup>
-          <Button color="primary" block onClick={this.signIn}>
+          <Button color="primary" block onClick={this.save}>
             Entrar
           </Button>
         </Form>
