@@ -1,6 +1,7 @@
 import react, { Component } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
 import Header from "../Header";
+import Card from "../Card"
 
 export default class Login extends Component {
 
@@ -38,13 +39,13 @@ export default class Login extends Component {
       })
       .catch(e => {
         this.setState({ message: e.message })
-        console.log(this.email, this.password)
       });
   }
 
   render() {
     return (
       <div>
+        <Card>
         <Header title="Login"></Header>
         <hr />
         {this.state.message !== '' ? (
@@ -76,6 +77,7 @@ export default class Login extends Component {
             Entrar
           </Button>
         </Form>
+        </Card>
       </div>
     );
   }
